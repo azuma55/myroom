@@ -1,0 +1,98 @@
+body{
+    background-color: $cOrange;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+@mixin  h2_size {
+    width: 20rem;
+    height: 4rem;
+}
+
+#work h2 , #process h2 , #news h2 , #contact h2{
+    @include h2_size;
+}
+
+header{
+    display: flex;
+    position: relative;
+    max-width: 1280px;
+    background-color: $cWhite;
+    margin: auto;
+
+    .inner{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+.nav_btn{
+    display: none;
+}
+
+.nav_global{
+    display: flex;
+
+    .tel{
+        margin-top: 6px;
+        margin-right: 3rem;
+    }
+
+    li{
+        font-size: 1.2rem;
+        margin-right: 3rem;
+    }
+
+    p:nth-of-type(2){
+        color: $cOrange;
+        font-size: 3rem;
+    }
+}
+}
+
+.all_container{
+    max-width: 1280px;
+    margin: auto;
+    top:initial;
+    background-color: $cWhite;
+}
+
+.hero{
+    height: 770px;
+
+    .hero_img{
+    background-image: url(../img/hero_pc.jpg);
+    }
+}
+
+.corona{
+    a{
+    font-size: 1.6rem;
+    }
+}
+
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .work_con{
+            margin: 2rem;
+            width: 46.8%;
+        }
+    }
+
+    .column_flex{
+    display: flex;
+    justify-content: space-around;
+    }
+
+    .column_01{
+        margin: 0 auto;
+    }
+
+    .column_02{
+        margin: 0 auto;
+    }
